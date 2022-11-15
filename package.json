@@ -1,0 +1,39 @@
+{
+  "name": "docincode",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Generate API documentation as JSON from comments in your code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "c8 node test"
+  },
+  "keywords": [
+    "documentation",
+    "auto-documentation",
+    "comments",
+    "extract",
+    "code",
+    "api",
+    "docs",
+    "generator"
+  ],
+  "author": "Mark Wylde <me@markwylde.com> (https://github.com/markwylde)",
+  "license": "MIT",
+  "devDependencies": {
+    "basictap": "^3.4.3",
+    "c8": "^7.12.0"
+  },
+  "dependencies": {
+    "acorn": "^8.8.1",
+    "globby": "^13.1.2",
+    "js-yaml": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markwylde/docincode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/markwylde/docincode/issues"
+  },
+  "homepage": "https://github.com/markwylde/docincode#readme"
+}
