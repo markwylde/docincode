@@ -1,5 +1,10 @@
 export default async function listPerson (load) {
+  // Normal random comment that should be ignored
   const presentPerson = await load('presenters/person.js');
+
+  /*
+    Another random comment that should be ignored
+  */
 
   return {
     /*

@@ -26,7 +26,11 @@ async function grabNotations (source) {
     parse(data, {
       onComment: (block, comment) => {
         const docSchema = comment.trim().split('\n').slice(1).join('\n');
-        const idAndVersion = comment.trim().split('\n')[0].split('(docs):')[1].trim();
+        const trimmedFirstLine = comment.trim().split('\n')[0];
+        if (!trimmedFirstLine.startsWith('(docs):')) {
+          return;
+        }
+        const idAndVersion = trimmedFirstLine.split('(docs):')[1].trim();
         const [id, version] = idAndVersion.split('@');
         if (comment.trim().startsWith('(docs):')) {
           origin.push({
