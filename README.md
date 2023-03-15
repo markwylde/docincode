@@ -11,7 +11,7 @@ In your projects javascript files, add comments anywhere and they will be collec
 
 Only comment blocks that start with `(docs): {RESOURCE_NAME}@{VERSION}` will be included.
 
-If no documentation can be found for a resource in a specific version, it will be taken from the last version that had docs. See the (example codebase)[./demo] for a more verbose example.
+If no documentation can be found for a resource in a specific version, it will be taken from the last version that had docs. See the [example codebase](./demo) for a more verbose example.
 
 For example. Given you have the following code somewhere in your `src` folder:
 ```javascript
